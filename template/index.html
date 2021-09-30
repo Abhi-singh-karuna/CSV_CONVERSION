@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1> DATA CONVERTER</h1>
+  <p>CSV TO JSON</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <h1>Show File-select Fields</h1>
+
+        <h3>choose file from your directory</h3>
+        <form id="uploadbanner" enctype="multipart/form-data" method="post" action="/handler/">
+          <input id="fileupload" name="myfile" type="file" />
+          <input type="submit" value="submit" id="submit" />
+       </form>
+       <br><br>
+            <form action="/csv" method="get">
+              <button name="subject" type="submit" >convert & Show</button>
+              </form> <br><br>
+
+              <form action="/csv" method="get">
+                <button name="subject" type="submit" >Download</button>
+              </form> 
+            
+    
+   
+  </div>
+</div>
+
+
+
+</body>
+</html>
